@@ -11,6 +11,7 @@ body{
 input{
     border-style: none;
     min-height: 1.8rem;
+    outline-style: none;
 }
 
 ol{
@@ -55,7 +56,7 @@ ol{
     #formulario{
         
         input[type=text]{
-            border-style: solid;
+            border-style: solid 1px;
             width: 100%;
             padding-left: .5rem;
             border-radius: .5rem;
