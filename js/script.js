@@ -8,7 +8,7 @@ let crearElementoTr=(nombre,precio)=>{
 document.querySelector("#formulario").addEventListener("submit",e=>{    
     e.preventDefault();
     let expReg=/(^[\d]+€?$)|(^[\d]+\.[\d]+€?$)/;
-    let expReg2=/^\w+$/;
+    let expReg2=/^[\w ]+$/;
     let precio = document.querySelector("#precio").value.trim();
     let nombre = document.querySelector("#nombre").value.trim();
     if(expReg.test(precio) && expReg2.test(nombre))
